@@ -1,0 +1,75 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+ul {
+	margin: 0;
+	padding-left: 0;
+}
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	letter-spacing: 0.03em;
+}
+.list {
+	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+}
+.container {
+	max-width: 600px;
+	padding: 15px;
+	border: 1px solid #ececec;
+	border-radius: 4px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.weather {
+	width: 560px;
+	padding: 15px;
+	border: 1px solid #ececec;
+	border-radius: 4px;
+}
+.temp-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.location {
+	width: 560px;
+	height: 280px;
+	padding: 15px;
+	border: 1px solid #ececec;
+	border-radius: 4px;
+}
+.weekdays {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.day {
+	width: 100px;
+	min-height: 100px;
+	border: 1px solid #ececec;
+	border-radius: 4px;
+}
+.feat-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}

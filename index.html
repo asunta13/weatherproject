@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<title>Your weather forecast</title>
+		<link rel="stylesheet" href="./src/styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<form id="search-form">
+				<label for="name"></label>
+				<input
+					type="search"
+					placeholder="Search for your city"
+					autofocus="on"
+					autocomplete="off"
+					id="city-input"
+				/>
+				<input type="submit" value="Search" />
+			</form>
+			<h1 class="city" id="city">Current city</h1>
+			<div class="weather">
+				<p>Current weather</p>
+				<time id="date"></time>
+				<div class="temperature">
+					<ul class="temp-list list">
+						<li>
+							<span class="temperature" id="temperature"></span
+							><span class="units">
+								<a class="link" href="#" id="celsius-link">°C</a> |
+								<a class="link" href="#" id="fahrenheit-link">°F</a>
+							</span>
+						</li>
+						<li id="description">
+							<br />
+							Feels like 29
+						</li>
+					</ul>
+					<p>Eumetnet: Alarm</p>
+				</div>
+				<div class="features">
+					<ul class="feat-list list">
+						<li class="feat">Wind <span id="wind"></span> km/h</li>
+						<li class="feat">Humidity <span id="humidity"></span> %</li>
+						<li class="feat">Precipitation</li>
+						<li class="feat">Pressure</li>
+						<li class="feat">Visibility</li>
+						<li class="feat">UF</li>
+					</ul>
+				</div>
+			</div>
+
+			<p>5 days forecast</p>
+			<div class="5 days">
+				<ul class="weekdays list">
+					<li class="day">Sun</li>
+					<li class="day">Mon</li>
+					<li class="day">Tue</li>
+					<li class="day">Wed</li>
+					<li class="day">Thir</li>
+				</ul>
+			</div>
+			<p>Current location</p>
+			<div class="location"></div>
+		</div>
+		<script src="src/index.js"></script>
+	</body>
+</html>
